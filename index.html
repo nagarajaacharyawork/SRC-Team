@@ -104,7 +104,6 @@ const OUT='<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="tr
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const track=document.getElementById('track'),stage=document.getElementById('stage'),segs=document.getElementById('segs');
 const N=MEMBERS.length;
-document.getElementById('logo').innerHTML=`<img src="${LOGO}" alt="Sahyadri Robotics Club logo">`;
 const link=(u,l,svg)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer" aria-label="${l}">${svg}</a>`:'';
 const phUri='data:image/svg+xml,'+encodeURIComponent(PH);
 const split=n=>{const p=String(n).trim().split(/\s+/);return p.length>1?[p.slice(0,-1).join(' '),p[p.length-1]]:['',p[0]]};
